@@ -1,0 +1,33 @@
+html {
+  font-size: 16px;
+  font-family: sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  height: 4rem;
+  font-size: 1.25rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-left: 1.5rem;
+}
+
+.word2 {
+  color: darkgray;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  margin-right: 1.5rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000;
+  margin-left: 1rem;
+}
