@@ -3,6 +3,7 @@ html {
   font-family: sans-serif;
 }
 
+/*Header section - includes logo and NAV*/
 header {
   display: flex;
   justify-content: space-between;
@@ -30,4 +31,41 @@ nav a {
   text-decoration: none;
   color: #000;
   margin-left: 1rem;
+}
+
+/*Jumbotron - includes banner img and CTA*/
+.banner {
+  background-color: lightgray;
+  display: flex;
+}
+
+.img-container {
+  width: 60%;
+  height: auto;
+  padding: 2rem 1.25rem;
+}
+
+.banner-img {
+  width: 100%;
+}
+
+.cta-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cta-txt {
+  margin-bottom: 1rem;
+}
+
+.btn {
+  text-align: center;
+  background-color: black;
+  padding: 0.5rem;
+}
+
+.btn a {
+  color: white;
+  text-decoration: none;
 }
