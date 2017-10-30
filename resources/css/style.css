@@ -158,3 +158,57 @@ article a {
   text-decoration: none;
   color: mediumblue;
 }
+
+/*COURSES SECTION*/
+
+section.courses {
+  background-color: lightgray;
+}
+
+.courses h1 {
+  padding-top: 2rem;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.course-figures {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem 4.5rem;
+  justify-content: space-around;
+}
+
+.course-figures figure {
+  background-color: white;
+  width: 30%;
+  padding-bottom: 1.5rem;
+}
+
+figure#top-row {
+  margin-bottom: 2rem;
+}
+
+figure .fig-img-container {
+  width: 100%;
+  height: auto;
+}
+
+figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+figcaption {
+  padding: 1rem;
+}
+
+figure h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.courses-txt {
+  margin: 1rem 0;
+}
