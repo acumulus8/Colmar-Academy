@@ -7,8 +7,12 @@ html {
 header {
   display: flex;
   justify-content: space-between;
+  width: 100%;
   height: 4rem;
   font-size: 1.25rem;
+  position: fixed;
+  z-index: 5;
+  background-color: white;
 }
 
 .logo {
@@ -37,15 +41,23 @@ nav a {
 .banner {
   background-color: lightgray;
   display: flex;
+  position: relative;
+  top: 4rem;
 }
 
+/*img-container effects information-main.jpg, too*/
+
+main {
+  position: relative;
+  top: 4rem;
+}
 .img-container {
-  width: 60%;
+  min-width: 60%;
   height: auto;
   padding: 2rem 1.25rem;
 }
 
-.banner-img {
+.main-img {
   width: 100%;
 }
 
@@ -53,19 +65,96 @@ nav a {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  max-width: 40%;
 }
 
 .cta-txt {
   margin-bottom: 1rem;
 }
 
+.title {
+  font-size: 3.25rem;
+}
+
 .btn {
   text-align: center;
   background-color: black;
   padding: 0.5rem;
+  width: 80%;
 }
 
 .btn a {
   color: white;
   text-decoration: none;
+}
+
+/*INFORMATION SECTION*//*********/
+
+section.information {
+  display: flex;
+}
+
+.info-pic-quote {
+  max-width: 60%;
+  padding: 2rem 1.5rem;
+}
+
+.quote {
+  margin-top: 2rem;
+}
+
+.quote h2 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+#quote-txt {
+  margin: 1.5rem 0;
+}
+
+/*INFORMATION ARTICLES*/
+
+.articles {
+  width: 40%;
+  border-left: 2px solid lightgray;
+}
+
+article {
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid lightgray;
+  padding: 1rem;
+}
+
+#article-top {
+  padding-top: 2rem;
+}
+
+article .article-txt {
+  width: 65%;
+  padding-left: 1rem;
+}
+
+.article-img-contain {
+  width: 35%;
+  height: auto;
+}
+
+.article-img {
+  width: 100%;
+  display: block;
+}
+
+article h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+article p {
+  margin: .5rem 0;
+}
+
+article a {
+  text-decoration: none;
+  color: mediumblue;
 }
