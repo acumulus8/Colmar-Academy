@@ -1,6 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700');
+
 html {
   font-size: 16px;
-  font-family: sans-serif;
+}
+
+body {
+  font-family: Montserrat;
+  line-height: 1.5rem;
 }
 
 /*Header section - includes logo and NAV*/
@@ -13,12 +19,14 @@ header {
   position: fixed;
   z-index: 5;
   background-color: white;
+  border-bottom: 0.75px inset darkgray;
 }
 
 .logo {
   display: flex;
   align-items: center;
   margin-left: 1.5rem;
+  font-weight: 500;
 }
 
 .word2 {
@@ -33,8 +41,13 @@ nav {
 
 nav a {
   text-decoration: none;
-  color: #000;
+  color: black;
   margin-left: 1rem;
+}
+
+/*hover styles nav links in header and the links in footer*/
+a:hover, #legal a:hover {
+  border-bottom: 1px solid black;
 }
 
 /*Jumbotron - includes banner img and CTA*/
@@ -45,19 +58,23 @@ nav a {
   top: 4rem;
 }
 
-/*img-container effects information-main.jpg, too*/
+.banner-left {
+  width: 60%;
+}
 
 main {
   position: relative;
   top: 4rem;
 }
-.img-container {
+
+/*.media-container and .media effects banner, information and thesis img and video*/
+.media-container {
   min-width: 60%;
   height: auto;
   padding: 2rem 1.25rem;
 }
 
-.main-img {
+.media {
   width: 100%;
 }
 
@@ -74,6 +91,8 @@ main {
 
 .title {
   font-size: 3.25rem;
+  font-weight: 600;
+  line-height: 3rem;
 }
 
 .btn {
@@ -86,6 +105,11 @@ main {
 .btn a {
   color: white;
   text-decoration: none;
+  width: 100%;
+}
+
+.btn a:hover {
+  border-bottom: 2px solid white;
 }
 
 /*INFORMATION SECTION*//*********/
@@ -94,17 +118,17 @@ section.information {
   display: flex;
 }
 
-.info-pic-quote {
+.media-quote {
   max-width: 60%;
-  padding: 2rem 1.5rem;
+  padding: ;
 }
 
 .quote {
-  margin-top: 2rem;
+  margin: 2rem 1.5rem;
 }
 
 .quote h2 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: bold;
 }
 
@@ -113,8 +137,8 @@ section.information {
 }
 
 /*INFORMATION ARTICLES*/
-
-.articles {
+/*article css styles articles in thesis section*/
+.articles-40 {
   width: 40%;
   border-left: 2px solid lightgray;
 }
@@ -124,10 +148,18 @@ article {
   align-items: center;
   border-bottom: 2px solid lightgray;
   padding: 1rem;
+  transition: all 800ms ease-out;
+}
+
+article:hover {
+  background-color: lightgray;
+  box-shadow: -7px 5px 5px darkgray;
+  -webkit-box-shadow: -7px 5px 5px darkgray;
+  -moz-box-shadow: -7px 5px 5px darkgray;
 }
 
 #article-top {
-  padding-top: 2rem;
+  margin-top: 2rem;
 }
 
 article .article-txt {
@@ -147,7 +179,7 @@ article .article-txt {
 
 article h3 {
   font-size: 1.5rem;
-  font-weight: bold;
+  font-weight: 500;
 }
 
 article p {
@@ -165,7 +197,8 @@ section.courses {
   background-color: lightgray;
 }
 
-.courses h1 {
+/*section-header styles header for courses and thesis exhibition*/
+h1#section-header {
   padding-top: 2rem;
   font-size: 2.5rem;
   font-weight: bold;
@@ -183,6 +216,7 @@ section.courses {
   background-color: white;
   width: 30%;
   padding-bottom: 1.5rem;
+
 }
 
 figure#top-row {
@@ -206,9 +240,46 @@ figcaption {
 
 figure h3 {
   font-size: 1.5rem;
-  font-weight: bold;
+  font-weight: 500;
 }
 
 .courses-txt {
   margin: 1rem 0;
+}
+
+/*THESIS EXHIBIT SECTION*/
+.thesis {
+  margin-top: 2rem;
+}
+
+#video-container {
+  padding: 0;
+  margin-left: 1.5rem;
+}
+
+/*styling for articles received from information articles*/
+#thesis-articles {
+  border: none;
+}
+
+#thesis-articles article {
+  border: none;
+  margin-left: 1.5rem;
+}
+
+/*FOOTER SECTION*/
+footer {
+  height: 4rem;
+  padding: 1rem 1.5rem;
+  border-top: 2px solid lightgrey;
+}
+
+#legal {
+  float: right;
+}
+
+#legal a {
+  text-decoration: none;
+  color: black;
+  margin-left: 1rem;
 }

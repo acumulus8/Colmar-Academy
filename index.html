@@ -6,6 +6,7 @@
     <title>Colmar Academy</title>
     <link href="resources/css/reset.css" type="text/css" rel="stylesheet">
     <link rel="stylesheet" href="resources/css/style.css">
+    <link href="./favicon.ico" type="image/x-icon" rel="icon">
   </head>
 
   <body>
@@ -18,21 +19,23 @@
         <span class="word2">ACADEMY</span>
       </div>
       <nav>
-        <span><a href="./#">On Campus</a></span>
-        <span><a href="./#">Online</a></span>
-        <span><a href="./#">For Companies</a></span>
-        <span><a href="./#">Sign in</a></span>
+        <span><a href="./index.html">On Campus</a></span>
+        <span><a href="./index.html">Online</a></span>
+        <span><a href="./index.html">For Companies</a></span>
+        <span><a href="./index.html">Sign in</a></span>
       </nav>
     </header>
     <div class="banner">
-      <div class="img-container">
-        <img class="main-img" src="resources/images/banner.jpg" alt="students sitting at a picnic table studying"/>
+      <div class="banner-left">
+        <div class="media-container">
+          <img class="media" src="resources/images/banner.jpg" alt="students sitting at a picnic table studying"/>
+        </div>
       </div>
       <div class="cta-container">
         <h1 class="cta-txt title">Learn Something New Every Day</h1>
-        <h3 class="cta-txt description">Lorem ipsum dolor sit samet, consectetor adipiscing elit.</h3>
-        <div class="cta-txt btn">
-          <a href="./#">Start here</a>
+        <h3 class="cta-txt">Lorem ipsum dolor sit samet, consectetor adipiscing elit.</h3>
+        <div class="btn">
+          <a href="./index.html">Start here</a>
         </div>
       </div>
     </div>
@@ -41,19 +44,19 @@
     <main>
     <!--ENTIRE INFO DIV-->
       <section class="information">
-        <div class="info-pic-quote">
-          <div class="main-img-container">
-            <img class="main-img" src="./resources/images/information-main.jpg" alt="a student reading a book outside on campus"/>
+        <div class="media-quote">
+          <div class="media-container">
+            <img class="media" src="./resources/images/information-main.jpg" alt="a student reading a book outside on campus"/>
           </div>
           <div class="quote">
             <h2>It doesn't hurt to keep practicing</h2>
-            <p id="quote-txt">"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex.Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
-            <p class="author">Emanuel, Sr Strategist at Hiring.com</p>
+            <p id="quote-txt">"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
+            <p>Emanuel, Sr Strategist at Hiring.com</p>
           </div>
         </div>
 
-      <!--OFFERS ARTICLES-->
-        <section class="articles">
+      <!--INFORMATION ARTICLES-->
+        <section class="articles-40">
           <article id="article-top">
             <div class="article-img-contain">
               <img class="article-img" src="resources/images/information-orientation.jpg" alt="an overhead view of students walking through campus on a fall day"/>
@@ -87,72 +90,120 @@
         </section>
       </section>
 
-      <!--START LEARNING/COURSES-->
-       <section class="courses">
-         <h1>Start Learning</h1>
-         <div class="course-figures">
-         <figure id="top-row">
-           <div class="fig-img-contain">
-             <img src="resources/images/course-software.jpg" alt="desktop monitors set up for software development work" />
-           </div>
-           <figcaption>
-             <h3>Software Engineering</h3>
-             <p class="courses-txt">COURSES</p>
-             <p>Web Development, Mobile Development, iOT, APIs</p>
-           </figcaption>
-         </figure>
-         <figure id="top-row">
-           <div class="fig-img-contain">
-             <img src="resources/images/course-computer-art.jpg" alt="a cell phone showing computer art" />
-           </div>
-           <figcaption>
-             <h3>Computer Art</h3>
-             <p class="courses-txt">COURSES</p>
-             <p>Imagine & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</p>
-           </figcaption>
-         </figure>
-         <figure id="top-row">
-           <div class="fig-img-contain">
-             <img src="resources/images/course-design.jpg" alt="a photographer holding an old fashioned camera" />
-           </div>
-           <figcaption>
-             <h3>Design</h3>
-             <p class="courses-txt">COURSES</p>
-             <p>User Experience Design, User Research, Visual Design</p>
-           </figcaption>
-         </figure>
-         <figure>
-           <div class="fig-img-contain">
-             <img src="resources/images/course-data.jpg" alt="a computer displaying graphs and charts" />
-           </div>
-           <figcaption>
-             <h3>Data</h3>
-             <p class="courses-txt">COURSES</p>
-             <p>Data Science, Big Science, SQL</p>
-           </figcaption>
-         </figure>
-         <figure>
-           <div class="fig-img-contain">
-             <img src="resources/images/course-business.jpg" alt="a chess board and chess pieces" />
-           </div>
-           <figcaption>
-             <h3>Business</h3>
-             <p class="courses-txt">COURSES</p>
-             <p>Product Development, Business Development, Startup</p>
-           </figcaption>
-         </figure>
-         <figure>
-           <div class="fig-img-contain">
-             <img src="resources/images/course-marketing.jpg" alt="an apple watch on a person's wrist" />
-           </div>
-           <figcaption>
-             <h3>Marketing</h3>
-             <p class="courses-txt">COURSES</p>
-             <p>Analytics, Content Marketing, Mobile Marketing</p>
-           </figcaption>
-         </figure>
-         </div>
-       </section>      
+     <!--COURSES SECTION-->
+      <section class="courses">
+        <h1 id="section-header">Start Learning</h1>
+        <div class="course-figures">
+        <figure id="top-row">
+          <div class="fig-img-contain">
+            <img src="resources/images/course-software.jpg" alt="desktop monitors set up for software development work" />
+          </div>
+          <figcaption>
+            <h3>Software Engineering</h3>
+            <p class="courses-txt">COURSES</p>
+            <p>Web Development, Mobile Development, iOT, APIs</p>
+          </figcaption>
+        </figure>
+        <figure id="top-row">
+          <div class="fig-img-contain">
+            <img src="resources/images/course-computer-art.jpg" alt="a cell phone showing computer art" />
+          </div>
+          <figcaption>
+            <h3>Computer Art</h3>
+            <p class="courses-txt">COURSES</p>
+            <p>Imagine & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</p>
+          </figcaption>
+        </figure>
+        <figure id="top-row">
+          <div class="fig-img-contain">
+            <img src="resources/images/course-design.jpg" alt="a photographer holding an old fashioned camera" />
+          </div>
+          <figcaption>
+            <h3>Design</h3>
+            <p class="courses-txt">COURSES</p>
+            <p>User Experience Design, User Research, Visual Design</p>
+          </figcaption>
+        </figure>
+        <figure>
+          <div class="fig-img-contain">
+            <img src="resources/images/course-data.jpg" alt="a computer displaying graphs and charts" />
+          </div>
+          <figcaption>
+            <h3>Data</h3>
+            <p class="courses-txt">COURSES</p>
+            <p>Data Science, Big Science, SQL</p>
+          </figcaption>
+        </figure>
+        <figure>
+          <div class="fig-img-contain">
+            <img src="resources/images/course-business.jpg" alt="a chess board and chess pieces" />
+          </div>
+          <figcaption>
+            <h3>Business</h3>
+            <p class="courses-txt">COURSES</p>
+            <p>Product Development, Business Development, Startup</p>
+          </figcaption>
+        </figure>
+        <figure>
+          <div class="fig-img-contain">
+            <img src="resources/images/course-marketing.jpg" alt="an apple watch on a person's wrist" />
+          </div>
+          <figcaption>
+            <h3>Marketing</h3>
+            <p class="courses-txt">COURSES</p>
+            <p>Analytics, Content Marketing, Mobile Marketing</p>
+          </figcaption>
+        </figure>
+        </div>
+      </section>
+
+      <!--THESIS SECTION-->
+        <h1 id="section-header">Thesis Exhibit</h1>
+        <section class="information thesis">
+          <div class="media-quote">
+            <div id="video-container" class="media-container">
+              <video width="100%" height="auto" preload="metadata" controls alt="a digital art timelapse of a 3D building and the movement of it's shadow througout a day">
+                <source src="resources/videos/thesis.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div class="quote">
+              <h2>Reimagine Urban</h2>
+              <p id="quote-txt">"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
+              <p class="author">Emanuel, Sr Strategist at Hiring.com</p>
+            </div>
+          </div>
+        <section class="articles-40" id="thesis-articles">
+          <article>
+            <div class="article-img-contain">
+              <img class="article-img" src="resources/images/thesis-fisma.jpg" alt="a desk covered in work materials and a cell phone"/>
+            </div>
+            <div class="article-txt">
+              <h3>Fisma: Design and Prototype</h3>
+              <p class="article-description">Designer showcase of new prototype product</p>
+            </div>
+          </article>
+          <article>
+            <div class="article-img-contain">
+              <img class="article-img" src="resources/images/thesis-now-and-then.jpg" alt="a view of the empire state building"/>
+            </div>
+            <div class="article-txt">
+              <h3>Now and Then</h3>
+              <p class="article-description">Research study about New York</p>
+            </div>
+          </article>
+        </section>
+      </section>
+
+      <!--FOOTER-->
+      <footer>
+        <span>&copy;2016 Colmar Academy. All rights reserved.</span>
+        <span id="legal">
+          <a href="./index.html">Terms</a>
+          <a href="./index.html">Privacy</a>
+        </span>
+      </footer>
+    </main>
+
 
   </body>
 </html>
