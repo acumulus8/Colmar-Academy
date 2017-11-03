@@ -10,7 +10,7 @@ body {
 }
 
 header a, .cta-txt-title, .cta-txt, .quote h2, .quote p, .article-txt p, .article-txt p, #section-header, figcaption h3, figcaption p, footer  {
-  opacity: 0.8;
+  opacity: 0.7;
 }
 
 /*Header section - includes logo and NAV*/
