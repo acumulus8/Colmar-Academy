@@ -9,6 +9,10 @@ body {
   line-height: 1.5rem;
 }
 
+header a, .cta-txt-title, .cta-txt, .quote h2, .quote p, .article-txt p, .article-txt p, #section-header, figcaption h3, figcaption p, footer  {
+  opacity: 0.8;
+}
+
 /*Header section - includes logo and NAV*/
 header {
   display: flex;
@@ -20,6 +24,10 @@ header {
   z-index: 5;
   background-color: white;
   border-bottom: 0.75px inset darkgray;
+}
+
+header .mobile {
+  display: none;
 }
 
 .logo {
@@ -67,7 +75,7 @@ main {
   top: 4rem;
 }
 
-/*.media-container and .media effects banner, information and thesis img and video*/
+/*.media-container and .media styles banner, information, video is styled by .media-container only*/
 .media-container {
   min-width: 60%;
   height: auto;
@@ -76,6 +84,7 @@ main {
 
 .media {
   width: 100%;
+  display: block
 }
 
 .cta-container {
@@ -120,7 +129,6 @@ section.information {
 
 .media-quote {
   max-width: 60%;
-  padding: ;
 }
 
 .quote {
@@ -130,6 +138,7 @@ section.information {
 .quote h2 {
   font-size: 2.5rem;
   font-weight: bold;
+  line-height: 1;
 }
 
 #quote-txt {
@@ -175,6 +184,10 @@ article .article-txt {
 .article-img {
   width: 100%;
   display: block;
+}
+
+article #article-img-mobile {
+  display: none;
 }
 
 article h3 {
@@ -282,4 +295,175 @@ footer {
   text-decoration: none;
   color: black;
   margin-left: 1rem;
+}
+
+/*********MOBILE QUERIES*********/
+@media only screen and (max-width: 480px) {
+
+  header {
+  height: 4rem;
+  }
+
+  .logo, nav {
+    display: none;
+  }
+
+  header .mobile {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  header a:hover {
+    border-bottom: none;
+  }
+
+  .banner {
+    flex-direction: column;
+  }
+
+  .banner .media-container {
+    width: 100%;
+    padding: 0;
+  }
+
+  .banner-left {
+    width: 100%;
+  }
+
+  .cta-container {
+    max-width: 100%;
+    padding: 2rem 1rem;
+  }
+
+  .title {
+    font-size: 1.75rem;
+    line-height: 1.25;
+  }
+
+  .btn {
+    width: auto;
+  }
+
+  .media-quote {
+    display: none;
+  }
+
+  section.articles-40 {
+    width: 100%;
+  }
+
+  #article-top {
+    margin-top: 0;
+  }
+
+  .articles-40 article {
+    flex-direction: column;
+  }
+
+  article #article-img-mobile {
+    display: block;
+  }
+
+  .article-img-contain {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+
+  .article-img {
+    display: none;
+  }
+
+  #article-img-mobile {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .article-txt {
+    min-width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  section.courses {
+    background-color: white;
+    padding: 0 1rem;
+  }
+
+  .course-figures {
+    flex-direction: column;
+    padding: 0;
+    margin-top: 2rem;
+  }
+
+  h1#section-header {
+    line-height: 1;
+    font-size: 1.75rem;
+  }
+
+  .course-figures figure {
+    min-width: 100%;
+    height: auto;
+    padding-bottom: 0;
+  }
+
+  .course-figures #top-row {
+    margin-bottom: 0;
+  }
+
+  figure h3{
+    background-color: darkgray;
+    color: black;
+    font-size: 1rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  figure img {
+    display: none;
+  }
+
+  figcaption p {
+    display: none;
+  }
+
+  figcaption {
+    width: 100%;
+    padding: 0;
+  }
+
+  #video-mobile {
+    display: block;
+    min-width: 100%;
+  }
+
+  #video-container {
+    width: 100%;
+    margin:0 0 1.5rem 0;
+  }
+
+  .thesis .quote {
+    display: none;
+  }
+
+  section #thesis-articles  {
+    display: none;
+  }
+
+  footer #legal {
+    display: none;
+  }
+
+  footer {
+    font-size: 0.5rem;
+    padding-bottom: 1rem;
+    border-top: none;
+  }
+
+  footer span {
+    padding: 1rem 0;
+  }
+
 }
