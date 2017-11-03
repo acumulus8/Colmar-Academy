@@ -229,7 +229,12 @@ h1#section-header {
   background-color: white;
   width: 30%;
   padding-bottom: 1.5rem;
+}
 
+figure {
+  box-shadow: -7px 5px 5px darkgray;
+  -webkit-box-shadow: -7px 5px 5px darkgray;
+  -moz-box-shadow: -7px 5px 5px darkgray;
 }
 
 figure#top-row {
