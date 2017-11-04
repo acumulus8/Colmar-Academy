@@ -418,6 +418,12 @@ footer {
     margin-bottom: 0;
   }
 
+  figure {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+  }
+
   figure h3{
     background-color: darkgray;
     color: black;
